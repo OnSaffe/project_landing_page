@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>onsaffe</title>
+</head>
+
+<body>
+
+  <!--MENU SUPERIOR-->
+  <div id="menusuperior">
+    <a href="https://www.google.com.br/" target="_blank" > <img src="./imagens/logo.svg" id="logo" alt=""></a>
+    <h1 id="titulo-menusuperior" >O novo padrão em <br>
+    Tecnologia</h1>
+    <p id="texto-menusuperior" >
+    Um parceiro experiente é fundamental <br>
+    para alcançar o resultado esperado.
+    </p>
+  </div>
+
+ <!--MENU INFORMACIONAL-->
+  <div id="menuinformacional">
+    <p class="textoinformativo"> <img src="icones/transformacaodigital.svg" class="icone" id="trdigital" alt=""> Transformação digital</p>
+    <p class="textoinformativo"> <img src="icones/devengsofware.svg"        class="icone" id="devsoftware" alt=""> Desenvolvimento e engenharia de software</p>
+    <p class="textoinformativo"> <img src="icones/projetosest.svg"          class="icone" id="projetosest" alt=""> Projetos estratégicos</p>
+  </div>
+
+ <!--SEÇÃO VIDEO-->
+ <div id="secaovideo">
+  <iframe id="video" width="502" height="283" src="https://www.youtube.com/embed/wdU9L3DqU2w" title="O que um Engenheiro de Software faz?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <div>
+    <h1 id="titulovideo">
+      Conectando agilidade e adaptabilidade
+    </h1> <br><br>
+    <p id="textovideo">
+      Sabemos como utilizar o melhor de cada tecnologia para atuar em <br>
+      diversas esferas, sem deixar de fora do nosso radar as novidades <br>
+      e necessidades específicas dos nossos clientes.
+    </p>
+  </div>
+  </div>
+
+  <!--CARROSEL-->
+  <div id="carrosel">
+    <h1 id="titulo-carrosel" >Depoimentos</h1>
+
+    <!--DIVISÃO DOS CARDS-->
+    <div id="div-cards">
+      <img  id="seta-esquerda" onclick="RolarParaEsquerda()" class="seta" src="./icones/seta-esquerda.svg" alt="">
+      <img   id="Leonardo"  class="card" src="./cards/leonardo.svg" alt="">
+      <img   id="Bruna"     class="card" src="./cards/bruna.svg" alt="">
+      <img   id="Samantha"  class="card" src="./cards/samantha.svg" alt="">
+      <img  id="seta-direita" onclick="RolarParaDireita()" class="seta" src="./icones/seta-direita.svg" alt="">
+
+    </div>
+    </div>
+
+    <!--FORMULÁRIO-->
+  <div id="formulario" >
+    <h1 id="titulo-formulario">Entre em contato</h1>
+      <form action="https://api.sheetmonkey.io/form/3C4bgsEnjmkc4pwQHcE5ew" method="post" >
+      <input type="text" placeholder="Nome" name="Name" required> <br>
+      <input type="email" placeholder="Email" name="Email" required> <br>
+      <input type="number" placeholder="Telefone" name="Phone"> <br>
+      <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+      <button type="submit" >Enviar!</button>
+    </form>
+  </div>
+
+   <script src="index.js"></script>
+
+</body>
+</html>
